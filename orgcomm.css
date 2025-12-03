@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+}
+
+.header {
+    background-image: url('background.jpg'); /* Add the correct background image */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+}
+
+.breadcrumb {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    color: #fdd835; /* Light yellow color */
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.content {
+    background-color: white;
+    padding: 20px;
+    margin: -50px auto 0;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.committee-section {
+    margin-top: 20px;
+}
+
+.committee-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.member {
+    margin-bottom: 20px;
+}
+
+.member p {
+    margin: 5px 0;
+}
+
+.member .name {
+    color: #0d47a1; /* Dark blue color */
+    font-weight: bold;
+}

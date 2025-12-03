@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Schedule Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #e0e0e0; /* Softer light background */
+        }
+        nav {
+            background-color: #003366;
+            width: 100%;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a, nav ul li select {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            background: none;
+        }
+        nav ul li select {
+            background-color: #003366;
+            cursor: pointer;
+        }
+        nav ul li a:hover, nav ul li select:hover {
+            text-decoration: underline;
+        }
+        .table-container {
+            width: 90%; /* Increase width for more space */
+            max-width: 1000px; /* Maximum width for readability */
+            margin: 20px auto; /* Margins for spacing */
+            background-color: #fff; /* White background for content */
+            padding: 30px; /* Increased padding for breathing room */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Larger shadow for depth */
+            border-radius: 10px; /* Rounded corners for modern look */
+            margin-top: 70px; /* Space for fixed navbar */
+        }
+        .table-title {
+            background-color: #ffff00; /* Bright title background */
+            color: #003366; /* Title text color */
+            font-weight: bold;
+            padding: 15px; /* More padding for prominence */
+            text-align: center;
+            margin-bottom: 20px; /* Larger bottom margin */
+            border-radius: 8px; /* Rounded corners for title */
+        }
+        table {
+            width: 100%; /* Full width for table */
+            border-collapse: collapse; /* Collapsed borders for neatness */
+            border: 2px solid #003366; /* Thicker border for better definition */
+        }
+        th {
+            background-color: #ffcc00; /* Header background */
+            color: #003366; /* Header text color */
+            font-weight: bold;
+            padding: 12px; /* Slightly more padding for headers */
+            text-align: left;
+            border-bottom: 2px solid #003366; /* Thicker bottom border */
+        }
+        td {
+            background-color: #003366; /* Cell background */
+            color: #fff; /* Text color */
+            padding: 15px; /* Increased padding for more space */
+            text-align: left;
+            border-bottom: 1px solid #fff; /* Border for separation */
+        }
+        td:last-child {
+            text-align: right; /* Align the last column to the right */
+        }
+        @media (max-width: 768px) { /* Responsive adjustments */
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .table-container {
+                width: 95%; /* Narrower width for smaller screens */
+                padding: 20px; /* Reduce padding */
+            }
+            th, td {
+                padding: 10px; /* Less padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Dropdown for Committees -->
+            <li>
+                <select id="committee-dropdown" onchange="location = this.value;">
+                    <option value="#" disabled selected>Committee</option>
+                    <option value="organizing_committee.html">Organizing Committee</option>
+                    <option value="national_advisory_committee.html">National Advisory Committee</option>
+                    <option value="international_advisory_committee.html">International Advisory Committee</option>
+                </select>
+            </li>
+            <li><a href="call_for_papers.html">Call for Papers</a></li>
+            <li><a href="program_schedule.html">Program Schedule</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="table-container">
+        <div class="table-title">Program Schedule</div>
+        <table>
+            <tr>
+                <th colspan="2">Important Dates</th>
+            </tr>
+            <tr>
+                <td>Paper Submissions Open On:</td>
+                <td>14 October 2024</td>
+            </tr>
+            <tr>
+                <td>Last Date for Submission:</td>
+                <td>06 March 2025</td>
+            </tr>
+            <tr>
+                <td>Notification of Acceptance:</td>
+                <td>25 April 2025</td>
+            </tr>
+            <tr>
+                <td>Registration Deadline:</td>
+                <td>05 September 2025</td>
+            </tr>
+            <tr>
+                <td>Final Camera-ready Due:</td>
+                <td>10 September 2025</td>
+            </tr>
+            <tr>
+                <td>Conference Dates:</td>
+                <td>6, 7 October 2025</td>
+            </tr>
+        </table>
+    </div>
+
+
+    
+</body>
+</html>

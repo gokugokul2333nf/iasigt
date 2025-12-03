@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Committee</title>
+    <link rel="stylesheet" href="orgcomm.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #003366;
+            width: 100%;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a, nav ul li select {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            background: none;
+        }
+        nav ul li select {
+            background-color: #003366;
+            cursor: pointer;
+        }
+        nav ul li a:hover, nav ul li select:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-top: 70px; /* Space for fixed navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+        }
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .breadcrumb a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px; /* Additional space if needed */
+        }
+        .committee-section {
+            margin-bottom: 30px;
+        }
+        .member {
+            margin-bottom: 15px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header, .content {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Dropdown for Committees -->
+            <li>
+                <select id="committee-dropdown" onchange="location = this.value;">
+                    <option value="#" disabled selected>Committee</option>
+                    <option value="organizing_committee.html">Organizing Committee</option>
+                    <option value="national_advisory_committee.html">National Advisory Committee</option>
+                    <option value="international_advisory_committee.html">International Advisory Committee</option>
+                </select>
+            </li>
+            <li><a href="call_for_papers.html">Call for Papers</a></li>
+            <li><a href="program_schedule.html">Program Schedule</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Organizing Committee</span>
+        </div>
+        <h1>Organizing Committee</h1>
+    </div>
+
+    <div class="content">
+        <!-- Organizing Committee Members -->
+        <div class="committee-section">
+            <h2>Organizing Committee Members</h2>
+            <div class="member">
+                <p><strong>Vice Patron</strong></p>
+                <p class="name">Mr. R. Mohanram</p>
+                <p>Chairman, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p><strong>Chief Patron</strong></p>
+                <p class="name">Mr. R. Rajaram</p>
+                <p>Director, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p><strong>Patron</strong></p>
+                <p class="name">Dr. Sudha Mohanram</p>
+                <p>Principal, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p><strong>General Chair</strong></p>
+                <p class="name">Dr. G.Karuppusami</p>
+                <p>Dean – Research & Innovation, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+
+            <div class="member">
+                <p><strong>General Chair</strong></p>
+                <p class="name">Dr. H.Anandakumar</p>
+                <p>Associate Dean – Research & Innovation, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+
+            <div class="member">
+                <p><strong>Convener</strong></p>
+                <p class="name">Dr. W. Rajanbabu</p>
+                <p>Professor, Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p><strong>Conference Chair</strong></p>
+                <p class="name">Dr. Pushpalatha N</p>
+                <p>Assistant Professor (Sl.Gr)/EEE, Department Head - Research, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+
+        <!-- Program Advisors -->
+        <div class="committee-section">
+            <h2>Program Advisors</h2>
+            <div class="member">
+                <p class="name">Mr. Kannan Narasimhan</p>
+                <p>Dean-Industry & International Relations, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. R.K.Suresh</p>
+                <p>Dean – Academics, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. M.Lakshmanan</p>
+                <p>Dean – IQAC, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. R. Maheswari</p>
+                <p>Dean – Innovation, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+
+        <!-- Technical Chairs -->
+        <div class="committee-section">
+            <h2>Technical Chairs</h2>
+            <div class="member">
+                <p class="name">Dr. V. Chandrasekaran</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. D. Gunapriya</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. N. Shanmugasundaram</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. P. John Augustine</p>
+                <p>Dept of IT, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. R. Sureshkumar</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. C. Vivek</p>
+                <p>Dept of CCE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. Sumathi</p>
+                <p>Dept of AIDS, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. V. S. Akshaya</p>
+                <p>Dept of CSE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. N. Kumareshan</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. L. Raja</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. N. K. Millerjothi</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+
+        <!-- Conference Treasurers -->
+        <div class="committee-section">
+            <h2>Conference Treasurers</h2>
+            <div class="member">
+                <p class="name">Dr. M.Geetha</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. P.Anbarasu</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+
+        <!-- Publicity Chairs -->
+        <div class="committee-section">
+            <h2>Publicity Chairs</h2>
+            <div class="member">
+                <p class="name">Dr. G. Gokilakrishnan</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. R. Babitha Lincy</p>
+                <p>Dept of CCE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+
+        <!-- Committee Members -->
+        <div class="committee-section">
+            <h2>Committee Members</h2>
+            <div class="member">
+                <p class="name">Dr. V. Chandrasekaran</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. D. Gunapriya</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. M.Geetha</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. P.Anbarasu</p>
+                <p>Dept of EEE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. L. Priya</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. P. Jayapriya</p>
+                <p>Dept of CSE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. P. Ganeshan</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. R. Menaha</p>
+                <p>Dept of IT, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. S. Sampath Kumar</p>
+                <p>Dept of CSE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. S. Dhanasekar</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. T. Ramakrishnan</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. S. Venkatesh</p>
+                <p>Dept of Mech, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+            <div class="member">
+                <p class="name">Dr. N. Muthukumaran</p>
+                <p>Dept of ECE, Sri Eshwar College of Engineering, Coimbatore, India.</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

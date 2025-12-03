@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracks and Scope</title>
+    <link rel="stylesheet" href="orgcomm.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+            justify-content: center; /* Center content vertically */
+            min-height: 100vh; /* Make the content take the full height */
+        }
+        nav {
+            background-color: #003366;
+            width: 100%;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a, nav ul li select {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            background: none;
+        }
+        nav ul li select {
+            background-color: #003366;
+            cursor: pointer;
+        }
+        nav ul li a:hover, nav ul li select:hover {
+            text-decoration: underline;
+        }
+        .content {
+            width: 90%; /* Make it flexible for smaller screens */
+            max-width: 800px; /* Limit the maximum width */
+            margin: 20px auto; /* Center and add spacing around */
+            padding: 20px;
+            background-color: #ffffff;  /* White background for better readability */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Subtle shadow for effect */
+            border-radius: 8px; /* Rounded corners */
+            margin-top: 70px; /* Space for fixed navbar */
+        }
+        h1, h2 {
+            text-align: center; /* Center the headings */
+            color: #2c3e50;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 10px 0;
+            padding-left: 40px; /* Indent the list items */
+            text-align: left;   /* Align the list items to the left */
+        }
+        .track {
+            margin-bottom: 30px; /* Increased margin for better spacing */
+        }
+
+        /* Media Query for Smaller Screens */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .content {
+                width: 95%; /* Make it wider on smaller screens */
+                padding: 15px; /* Reduce padding for smaller screens */
+            }
+            ul {
+                padding-left: 20px; /* Reduce indentation */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Dropdown for Committees -->
+            <li>
+                <select id="committee-dropdown" onchange="location = this.value;">
+                    <option value="#" disabled selected>Committee</option>
+                    <option value="organizing_committee.html">Organizing Committee</option>
+                    <option value="national_advisory_committee.html">National Advisory Committee</option>
+                    <option value="international_advisory_committee.html">International Advisory Committee</option>
+                </select>
+            </li>
+            <li><a href="call_for_papers.html">Call for Papers</a></li>
+            <li><a href="program_schedule.html">Program Schedule</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1>Tracks and Scope</h1>
+
+        <div class="track">
+            <h2>Track-1: AI in Energy Conversion, Electrification, Integration, Design Optimization, and Energy Storage</h2>
+            <ul>
+                <li>Energy Conversion Systems</li>
+                <li>Rural Electrification</li>
+                <li>Smart Network</li>
+                <li>Micro Grid</li>
+                <li>Smart Grid</li>
+                <li>Hybrid Grid</li>
+                <li>Grid Integration</li>
+                <li>Network Optimization</li>
+                <li>Energy Storage Mechanism</li>
+                <li>Battery Technology</li>
+                <li>Hydrogen Energy Technology</li>
+                <li>Renewable Energy Integration</li>
+                <li>Standalone Energy Systems</li>
+                <li>AI-Based System Controllers</li>
+                <li>Battery Management System</li>
+                <li>Charge Controller Unit</li>
+                <li>Optimization Algorithm</li>
+            </ul>
+        </div>
+
+        <div class="track">
+            <h2>Track-2: AI for Sustainable Smart City Development</h2>
+            <ul>
+                <li>Renewable Energy Conversion</li>
+                <li>Smart City Proposals</li>
+                <li>Industry-Environment Relationships</li>
+                <li>Industry 4.0</li>
+                <li>Efficient Waste Management</li>
+                <li>Sustainable Smart Systems</li>
+            </ul>
+        </div>
+
+        <div class="track">
+            <h2>Track-3: AI for Rural Development</h2>
+            <ul>
+                <li>Rural Electrification</li>
+                <li>Standalone Power System</li>
+                <li>Grid-Tied Renewables</li>
+                <li>Rural Waste Management</li>
+                <li>Rural Water Management</li>
+                <li>Smart Production</li>
+                <li>Raw Material Management</li>
+                <li>Bio-Based Energy and Its Utility</li>
+            </ul>
+        </div>
+
+        <div class="track">
+            <h2>Track-4: AI for Women and Youth Safety and Empowerment</h2>
+            <ul>
+                <li>AI for Youth Empowerment</li>
+                <li>AI-Based Gadgets for Women Safety and Empowerment</li>
+                <li>AI for Child, Youth, and Women Communication Forums</li>
+                <li>AI-Based Centralized Information Transferring Protocols</li>
+                <li>AI for Multidisciplinary Innovations</li>
+            </ul>
+        </div>
+    </div>
+
+
+</body>
+</html>

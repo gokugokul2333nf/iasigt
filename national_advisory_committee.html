@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizing Committee</title>
+    <link rel="stylesheet" href="orgcomm.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #003366;
+            width: 100%;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a, nav ul li select {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;
+            border: none;
+            background: none;
+        }
+        nav ul li select {
+            background-color: #003366;
+            cursor: pointer;
+        }
+        nav ul li a:hover, nav ul li select:hover {
+            text-decoration: underline;
+        }
+        .header {
+            text-align: center;
+            margin-top: 70px; /* Space for fixed navbar */
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+        }
+        .breadcrumb {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .breadcrumb a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px; /* Additional space if needed */
+        }
+        .committee-section {
+            margin-bottom: 30px;
+        }
+        .member {
+            margin-bottom: 15px;
+        }
+        .name {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .header, .content {
+                width: 95%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="organizing_committee.html">Organizing Committee</a></li>
+            <li><a href="national_advisory_committee.html">National Advisory Committee</a></li>
+            <li><a href="international_advisory_committee.html">International Advisory Committee</a></li>
+            <li><a href="call_for_papers.html">Call for Papers</a></li>
+            <li><a href="program_schedule.html">Program Schedule</a></li>
+            <li><a href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Organizing Committee</span>
+        </div>
+        <h1>Organizing Committee</h1>
+    </div>
+
+    <div class="content">
+        <div class="committee-section">
+            <h2>Technical Programming Committee Members</h2>
+
+            <!-- Updated Organizing Committee Members -->
+            <div class="member">
+                <p><strong>President</strong></p>
+                <p class="name">Dr. Pratapsinh Kakasaheb Desai</p>
+                <p>President, ISTE</p>
+            </div>
+            <div class="member">
+                <p><strong>Vice-President</strong></p>
+                <p class="name">Shri R. Baskar</p>
+                <p>Vice-President, ISTE</p>
+            </div>
+            <div class="member">
+                <p><strong>Vice-President</strong></p>
+                <p class="name">Dr. Gujjala Venkatasubbaiah</p>
+                <p>Vice-President, ISTE</p>
+            </div>
+            <div class="member">
+                <p><strong>Executive Secretary</strong></p>
+                <p class="name">Dr. Suresh R.K.</p>
+                <p>Executive Secretary, ISTE</p>
+            </div>
+
+
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Krishna Vasudevan</p>
+                <p>Indian Institute of Technology, Madras</p>
+            </div>
+
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Sishaj P Simon.</p>
+                <p>National Institute of Technology, Tiruchirappalli</p>
+            </div>
+
+
+
+
+
+
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. A. Prasanth</p>
+                <p>Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology, Chennai</p>
+            </div>
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. Vandana Sharma</p>
+                <p>CHRIST (Deemed to be University), Delhi-NCR, India</p>
+            </div>
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. Rajesh Kumar Dhanaraj</p>
+                <p>Symbiosis International (Deemed University)Delhi India</p>
+            </div>
+
+            <div class="member">
+                <p><strong>Associate Dean</strong></p>
+                <p class="name">Dr. Balamurugan Balusamy</p>
+                <p>Associate Dean, Shiv Nadar University, Noida, Uttar Pradesh, India</p>
+            </div>
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. A. Albert Rajan</p>
+                <p>Karunya University, Coimbatore, Tamil Nadu, India</p>
+            </div>
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. R. Senthil Kumar</p>
+                <p>VIT Chennai, Tamil Nadu, India</p>
+            </div>
+            <div class="member">
+                <p><strong>Professor</strong></p>
+                <p class="name">Dr. S. Elangovan</p>
+                <p>Johnsons Institute of Technology, Coimbatore, Tamil Nadu, India</p>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
