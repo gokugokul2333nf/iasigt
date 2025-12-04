@@ -1,40 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IASIGT</title>
-    <link rel="icon" href="sece_logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-content">
-            <div class="logo">
-                <img src="logo.png" alt="College Logo">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IASIGT</title>
+        <link rel="icon" href="sece_logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <img src="logo.png" alt="College Logo">
+                </div>
+                <div class="conference-info">
+                    <h1>The first international conference on 2026 Implication of AI for Sustainable Innovations in Global Transition</h1>
+                    <h2>IASIGT 2026</h2>
+                    <p>06-07 October 2026</p>
+                </div>
             </div>
-            <div class="conference-info">
-                <h1>The first international conference on 2026 Implication of AI for Sustainable Innovations in Global Transition</h1>
-                <h2>IASIGT 2026</h2>
-                <p>06-07 October 2025</p>
-            </div>
-        </div>
-    </header>
+        </header>
 
     <!-- Navigation Menu -->
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="nav-menu">
             <li><a href="index.html">Home</a></li>
-            <!-- Dropdown for Committees -->
-            <li>
-                <select id="committee-dropdown" onchange="location = this.value;">
-                    <option value="#" disabled selected>Committee</option>
-                    <option value="organizing_committee.html">Organizing Committee</option>
-                    <option value="national_advisory_committee.html">National Advisory Committee</option>
-                    <option value="international_advisory_committee.html">International Advisory Committee</option>
-                </select>
+
+            <!-- Dropdown Menu -->
+            <li class="nav-item dropdown">
+                <a href="#" class="dropdown-btn">Committee ▾</a>
+                <ul class="dropdown-content">
+                    <li><a href="organizing_committee.html">Organizing Committee</a></li>
+                    <li><a href="national_advisory_committee.html">National Advisory Committee</a></li>
+                    <li><a href="international_advisory_committee.html">International Advisory Committee</a></li>
+                </ul>
             </li>
+
             <li><a href="call_for_papers.html">Call for Papers</a></li>
             <li><a href="program_schedule.html">Program Schedule</a></li>
             <li><a href="registration.html">Registration</a></li>
@@ -42,169 +44,299 @@
         </ul>
     </nav>
 
-    <!-- Main Content Section -->
-    <section class="main-content">
-        <h2>Sri Eshwar College of Engineering</h2>
-        <p>Welcome</p>
-        <div class="content">
-            <h3>Incredible India</h3>
-            <!-- Additional content can go here -->
+<!-- 
+         Main Content Section -->
+        <!-- <section class="main-content">
+            <h2>Sri Eshwar College of Engineering</h2>
+            <p>Welcome</p>
+            <div class="content">
+                <h3>Incredible India</h3>
+            </div>
+        </section> --> 
+
+<!-- Image Slideshow Section -->
+<section class="slideshow-container">
+    <div class="slide fade">
+        <img src="p1.jpg" alt="Slide 1">
+        <div class="slide-caption">Welcome to IASIGT 2026</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="p2.jpg" alt="Slide 2">
+        <div class="slide-caption">Join the International Conference</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="p3.jpg" alt="Slide 3">
+        <div class="slide-caption">Explore AI Innovations</div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Dots/Indicators -->
+    <div style="text-align:center; margin-top:10px;">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+
+</section>
+    <!-- Important Dates Section -->
+    <section class="important-dates">
+        <h2>Important Dates</h2>
+        <table>
+            <tr>
+                <th colspan="2">Important Dates</th>
+            </tr>
+            <tr><td>Paper Submissions Open On:</td><td>2 February 2026</td></tr>
+            <tr><td>Last Date for Submission:</td><td>04 May 2026</td></tr>
+            <tr><td>Notification of Acceptance:</td><td>26 June 2026</td></tr>
+            <tr><td>Registration Deadline:</td><td>1 July 2026</td></tr>
+            <tr><td>Final Cameraready Due:</td><td>10 September 2026</td></tr>
+            <tr><td>Conference Dates:</td><td>3, 4 December 2026</td></tr>
+        </table>
+    </section>
+
+    <!-- Info Sections -->
+    <section class="info-section">
+        <div class="info-box">
+            <h2>Welcome to IASIGT 2025</h2>
+            <p>The First International Conference on “Implication of AI for Sustainable Innovations in Global Transition (IASIGT – 2025)” ...</p> 
+        </div>
+
+        <div class="info-box">
+            <h2>Scope of the Conference</h2>
+            <p>The first international conference on 2025 Implication of AI for Sustainable Innovations in Global Transition ...</p>
         </div>
     </section>
-</body>
-</html>
 
- <!-- Main Content Section -->
- <section class="important-dates">
-    <h2>Important Dates</h2>
-    <table>
-        <tr>
-            <th colspan="2">Important Dates</th>
-        </tr>
-        <tr>
-            <td>Paper Submissions Open On:</td>
-            <td>2 February 2026</td>
-        </tr>
-        <tr>
-            <td>Last Date for Submission:</td>
-            <td>04 May 2026</td>
-        </tr>
-        <tr>
-            <td>Notification of Acceptance:</td>
-            <td>26 June 2026</td>
-        </tr>
-        <tr>
-            <td>Registration Deadline:</td>
-            <td>1 July 2026</td>
-        </tr>
-        <tr>
-            <td>Final Cameraready Due:</td>
-            <td>10 September 2026</td>
-        </tr>
-        <tr>
-            <td>Conference Dates:</td>
-            <td>3, 4 December 2026</td>
-        </tr>
-    </table>
-</section>
-
-<!-- Welcome and Scope Sections -->
-<section class="info-section">
-    <div class="info-box">
-        <h2>Welcome to IASIGT 2025</h2>
-        <p>The First International Conference on “Implication of AI for Sustainable Innovations in Global Transition (IASIGT – 2025)” will highlight the latest breakthroughs and innovations in Artificial Intelligence, Machine Learning, Deep Learning, sustainable practices, Electrical, Electronics, and Communication Engineering. The conference is designed to showcase the technical expertise of emerging technologists, research scholars, and distinguished representatives from academia and industry. The primary goal of the conference is to gather leading research professionals from around the world to foster collaboration and exchange cutting-edge knowledge.</p> 
-    </div>
-
-    <div class="info-box">
-        <h2>Scope of the Conference</h2>
-        <p>The first international conference on 2025 Implication of AI for Sustainable Innovations in Global Transition (IASIGT-2025) aims to provide cutting-edge knowledge in multidisciplinary aspects for the sustainable development of the nation. Artificial intelligence (AI) is a powerful, cutting-edge, and booming domain that, when infused into various domains, has the potential to make significant advancements and foster innovations in sustainable development. This international conference aims to bridge the knowledge of future engineers, researchers, academicians, and industry experts, providing insights into upcoming ways, means, and methods using AI technology, which can benefit global development by considering sustainable environments for the future.</p>
-    </div>
-</section>
-
-<!-- Objectives Section -->
-<section class="info-section">
-    <div class="info-box">
-        <h2>Objectives</h2>
-        <ul>
-            <li style="color: white;">Foster collaboration among artificial intelligence experts and sustainability experts to formulate groundbreaking solutions for global challenges.</li>
-            <li style="color: white;">To find the various innovative methods of applications of artificial intelligence in energy conversion, electrification, integration, design optimization, and energy storage for the acceleration of global transitions towards sustainable economies and green energy sources.</li>
-            <li style="color: white;">To find the various opportunities for Developing Sustainable Smart Cities with the aid of Artificial Intelligence.</li>
-            <li style="color: white;">Identify opportunities for AI to enhance resource efficiency and reduce environmental impact.</li>
-            <li style="color: white;">An Artificial Intelligence Approach to Enhancing Safety and Empowerment.</li>
-            <li style="color: white;">Analyze case studies of successful AI-driven sustainable innovations in various sectors.</li>
-        </ul>
-        
-    </div>
-</section>
-
-<!-- About Sri Eshwar College of Engineering Section -->
-<section class="info-section">
-    <div class="info-box">
-        <h2>About Sri Eshwar College of Engineering</h2>
-        <p>Sri Eshwar College of Engineering is an Autonomous Institution, approved by AICTE, New Delhi, and affiliated with Anna University, Chennai. Established in 2008, the institution is dedicated to providing a holistic approach to education, focusing on delivering quality education. Sri Eshwar College of Engineering offers ten undergraduate programs and three postgraduate programs. The campus is located near Kinathukadavu, approximately 25 km from Coimbatore Railway Station.</p>
-    </div>
-</section>
-<footer style="background-color: #0b2a4a; color: #fff; padding: 30px 0; text-align: center;">
-    <div style="
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        max-width: 1200px;
-        margin: auto;
-    ">
-        <!-- Logo and Social Media -->
-        <div style="margin-bottom: 20px; text-align: center;">
-            <img src="logo.png" alt="Sri Eshwar College of Engineering" style="width: 250px; margin-bottom: 20px;">
-            <div style="display: flex; justify-content: center; gap: 15px;">
-                <!-- Social media icons go here -->
-            </div>
-        </div>
-        
-        <!-- Sitemap -->
-        <div style="margin-bottom: 20px; text-align: center;">
-            <h3>Sitemap</h3>
-            <ul style="list-style-type: none; padding: 0;">
-                <li><a href="index.html" style="color: #fff; text-decoration: none;">Home</a></li>
-                <li><a href="organizing_committee.html" style="color: #fff; text-decoration: none;">Organizing Committee</a></li>
-                <li><a href="advisory_committee.html" style="color: #fff; text-decoration: none;">Advisory Committee</a></li>
-                <li><a href="program_schedule.html" style="color: #fff; text-decoration: none;">Program Schedule</a></li>
-                <li><a href="registration.html" style="color: #fff; text-decoration: none;">Registration</a></li>
+    <section class="info-section">
+        <div class="info-box">
+            <h2>Objectives</h2>
+            <ul>
+                <li style="color:white;">Foster collaboration among artificial intelligence experts...</li>
+                <li style="color:white;">To find various innovative methods...</li>
+                <li style="color:white;">Developing Sustainable Smart Cities...</li>
+                <li style="color:white;">Identify opportunities...</li>
+                <li style="color:white;">AI Approach to Enhancing Safety...</li>
+                <li style="color:white;">Analyze case studies...</li>
             </ul>
         </div>
-        
-        <!-- Contact Us -->
-        <div style="text-align: center; margin-bottom: 20px;">
-            <h3>Contact Us</h3>
-            <p>Conference Chair- IASIGT 2025,<br>
-               Sri Eshwar College of Engineering,<br>
-               Kondampatti (po), Vadasithur (Via),<br>
-               Kinathukadavu, Coimbatore-641 202.<br>
-               Tamil Nadu, India.</p>
-            <p><i class="fa fa-phone"></i> +91 4259 200489</p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:icaccs@sece.ac.in" style="color: #fff; text-decoration: none;">iasigt2025@gmail.com</a></p>
+    </section>
+
+    <section class="info-section">
+        <div class="info-box">
+            <h2>About Sri Eshwar College of Engineering</h2>
+            <p>Sri Eshwar College of Engineering is an Autonomous Institution...</p>
         </div>
-    </div>
-    <div style="border-top: 1px solid #fff; margin-top: 20px; padding-top: 20px;">
-        <p>&copy; 2024 @ IASIGT. All Rights Reserved. Website Designed & Maintained By: Department of Electrical & Electronics Engineering (EEE), SECE.</p>
-    </div>
-</footer>
+    </section>
 
-<style>
-@media (min-width: 768px) {
-    footer div {
-        flex-direction: row;
-        text-align: left;
-    }
-    footer div > div {
-        flex: 1;
-        margin-bottom: 0;
+    <footer style="background-color:#0b2a4a; color:#fff; padding:30px 0; text-align:center;">
+        <div style="display:flex; flex-direction:column; align-items:center; max-width:1200px; margin:auto;">
+            <div style="margin-bottom:20px;">
+                <img src="logo.png" alt="Sri Eshwar College of Engineering" style="width:250px;margin-bottom:20px;">
+            </div>
+
+            <div style="margin-bottom:20px;">
+                <h3>Sitemap</h3>
+                <ul style="list-style:none;padding:0;">
+                    <li><a href="index.html" style="color:#fff;text-decoration:none;">Home</a></li>
+                    <li><a href="organizing_committee.html" style="color:#fff;text-decoration:none;">Organizing Committee</a></li>
+                    <li><a href="advisory_committee.html" style="color:#fff;text-decoration:none;">Advisory Committee</a></li>
+                    <li><a href="program_schedule.html" style="color:#fff;text-decoration:none;">Program Schedule</a></li>
+                    <li><a href="registration.html" style="color:#fff;text-decoration:none;">Registration</a></li>
+                </ul>
+            </div>
+
+            <div style="text-align:center;margin-bottom:20px;">
+                <h3>Contact Us</h3>
+                <p>Conference Chair- IASIGT 2025,<br>Sri Eshwar College of Engineering...</p>
+                <p>+91 4259 200489</p>
+                <p><a href="mailto:icaccs@sece.ac.in" style="color:#fff;">iasigt2025@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid #fff; margin-top:20px; padding-top:20px;">
+            <p>&copy; 2024 @ IASIGT. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Hover Dropdown CSS -->
+    <style>
+    /* Navigation Styling */
+    .navbar {
+        background: #0b2a4a;
+        padding: 18px 0;
     }
 
-    /* Centering the Contact Us section */
-    footer div > div:last-child {
-        flex: 1;
+    .nav-menu {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        text-align: center;
+        gap: 35px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
+
+    .nav-menu li a, .dropdown-btn {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 8px 12px;
+        display: block;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .nav-menu li a:hover,
+    .dropdown-btn:hover {
+        color: #ffd700;
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #0b2a4a;
+        list-style: none;
+        padding: 10px 0;
+        border-radius: 6px;
+        width: 240px;
+        top: 40px;
+        left: 0;
+        z-index: 20;
+    }
+
+    .dropdown-content li a {
+        padding: 10px 15px;
+    }
+
+    .dropdown-content li a:hover {
+        background: #02315c;
+    }
+
+    /* Hover & Click Support */
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    /* Slideshow Styling */
+.slideshow-container {
+    position: relative;
+    width: 100%;           /* Full width */
+    margin: 20px 0;        /* Top and bottom spacing */
+    overflow: hidden;
+    border-radius: 10px;
 }
 
-@media (max-width: 767px) {
-    footer div {
-        flex-direction: column;
-        text-align: center;
-    }
-    footer div > div {
-        margin-bottom: 20px;
-    }
+.slide img {
+    width: 100%;           /* Full width of container */
+    height: 350px;         /* Adjust height as needed */
+    object-fit: cover;     /* Maintain image aspect ratio */
+    border-radius: 10px;
 }
-</style>
 
-<!-- FontAwesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+/* Caption stays the same */
+.slide-caption {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 18px;
+    border-radius: 5px;
+}
 
-</body>
-</html>
+/* Navigation Arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.3s;
+    border-radius: 50%;
+    user-select: none;
+    background: rgba(0,0,0,0.4);
+}
 
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
+}
+
+.prev { left: 15px; transform: translateY(-50%); }
+.next { right: 15px; transform: translateY(-50%); }
+
+/* Fade animation */
+@keyframes fade {
+    from {opacity: 0.4}
+    to {opacity: 1}
+}
+
+/* Dots */
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+
+    </style>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active-dot";
+    }
+
+    // Auto slide every 4 seconds
+    setInterval(function(){ plusSlides(1); }, 4000);
+</script>
+    </body>
+    </html>
